@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cricku">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="CrickU"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Login">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Home" />
+
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false"
+            android:label="Select Category"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".OptionActivity"
+            android:exported="false"
+            android:label="Options"
+            android:parentActivityName=".CategoryActivity" />
+
+        <activity
+            android:name=".PostActivity"
+            android:exported="false"
+            android:label="Create Post"
+            android:parentActivityName=".OptionActivity" />
+
+        <activity
+            android:name=".FeedActivity"
+            android:exported="false"
+            android:label="Sports Feed"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+</manifest>

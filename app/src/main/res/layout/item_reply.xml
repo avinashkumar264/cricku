@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="6dp"
+    android:background="#EEEEEE"
+    android:elevation="1dp">
+
+    <!-- 👤 Reply User -->
+
+    <TextView
+        android:id="@+id/tvReplyUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user@gmail.com"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- 💬 Reply Message -->
+
+    <TextView
+        android:id="@+id/tvReplyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is reply message"
+        android:textSize="14sp"
+        android:textColor="#222222"
+        android:layout_marginTop="4dp" />
+
+    <!-- ⏱ Reply Time -->
+
+    <TextView
+        android:id="@+id/tvReplyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:45 PM"
+        android:textSize="12sp"
+        android:textColor="#777777"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
