@@ -2,33 +2,33 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F5F7FA"
-    android:padding="12dp">
+    android:padding="12dp"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/tvMainTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CrickU"
+        android:text="@string/app_name"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#1B5E20"
         android:gravity="center"
-        android:paddingBottom="6dp" />
+        android:paddingBottom="8dp" />
 
     <TextView
         android:id="@+id/tvMainSubtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your sports community for posts, stats, predictions and fan talk"
+        android:text="Choose a category and start exploring sports conversations"
         android:textSize="14sp"
         android:textColor="#546E7A"
         android:gravity="center"
-        android:paddingBottom="14dp" />
+        android:paddingBottom="20dp" />
 
     <Button
         android:id="@+id/btnCategory"
@@ -39,25 +39,5 @@
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:backgroundTint="#2E7D32" />
-
-    <TextView
-        android:id="@+id/tvTrending"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Trending Fan Posts"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        android:textColor="#0D1B2A"
-        android:layout_marginTop="14dp"
-        android:layout_marginBottom="6dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerPosts"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="6dp"
-        android:clipToPadding="false"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </LinearLayout>
